@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Задание 3</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("Введите сюда своё имя", "Введите имя");
+            document.write("Ваше имя: " + name);
+            var repeat = confirm("Начать заново?");
+            if (repeat) {
+                var confirmation = confirm("Не надоело?");
+                while(confirmation){
+                    confirmation = confirm("Не надоело?");
+                }
+                alert("Ну и правильно!");
+            } 
+            else {
+                alert("Ну и правильно!");
+            }
+        </script>
+    </body>
+</html>
