@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>window</title>
+        <script language="JavaScript" type="text/JavaScript">
+            function openPDF(){
+                if (confirm("Для загрузки документа требуется программа Acrobat. Продолжить загрузку?")) {
+                    window.location.href = "JS_metodichka.pdf"; 
+                }
+            }
+            function repaintRed() {
+                document.bgColor = "red";
+            }
+            function repaintWhite() {
+                document.bgColor = "white";
+            }
+        </script>
+    </head>
+    <body>
+        <a href="#" onclick="openPDF()">Открыть PDF-файл</a>
+        <br>
+        <a href="#" onmouseover="repaintRed()"  onmouseout="repaintWhite()">Наведи мышь</a>
+    </body>
+</html>
