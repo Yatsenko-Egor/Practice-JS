@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Задание 13</title>
+        <style>
+            .img {
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+          }
+        </style>
+        <script>
+             function decrease() {
+                    var image = document.getElementById("image");
+                    image.style.transform = 'scale(1)';
+                }
+                function increase() {
+                    var image = document.getElementById("image");
+                    image.style.transform = 'scale(1.5)';
+                }
+        </script>
+    </head>
+    <body>
+        <div class="img">
+            <img id="image" onmouseover="increase()"  onmouseout="decrease()" src="img1.gif">
+        </div>
+    </body>
+</html>
