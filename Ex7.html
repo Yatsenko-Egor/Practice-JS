@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>array</title>
+        <script language="JavaScript">
+           function writeSubjects(){
+            var subjects = new Array("Физика", "Математика", "Информатика", "Химия", "Русский язык", "Литература", "История", "Обществознание");
+            var exact_sciences = subjects.slice(0, 4);
+            var humanities = subjects.slice(4, 8);
+            document.write(exact_sciences + "<br>");
+            document.write(humanities);
+           }
+        </script>
+    </head>
+    <body>
+        <script language="JavaScript">
+            writeSubjects();
+        </script>
+    </body>
+</html> 
