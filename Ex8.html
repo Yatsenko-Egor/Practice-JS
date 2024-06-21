@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Задание 8</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            // для определения имени браузера лучше использовать navigator.userAgent
+            // navigator.appName вернёт Netscape для большинства браузеров
+            var name = navigator.userAgent;
+            // так как Internet Explorer больше не поддерживается, то задание
+            // было реализовано относительно Microsoft Edge
+            if (name.indexOf("Edg") > -1) {
+                window.location.href = "Ex1.html";
+            } 
+            else {
+                window.location.href = "Ex3.html";
+            }
+        </script>
+    </body>
+</html> 
